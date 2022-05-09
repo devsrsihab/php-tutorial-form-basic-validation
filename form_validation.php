@@ -77,9 +77,9 @@
 
 	function test_input($data)
 	{
-		$data = trim($data);
-		$data = stripslashes($data);
-		$data = htmlspecialchars($data);
+		$data = trim($data); //remove extra space from left or right side
+		$data = stripslashes($data); //remove \ backslash
+		$data = htmlspecialchars($data); //remove thml special character like: <> </> etc.
 		return $data;
 	}
 
